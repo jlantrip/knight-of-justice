@@ -1,5 +1,3 @@
-import time
-
 inventory = []
 
 print("""
@@ -139,7 +137,7 @@ beast down to his cave in the east in order to slay him.""")
         
 #Forest
 def sixteen():
-#    print("16: Forest")
+    print("16: Forest")
     print("You find yourself in a forest with nothing notable around you.")
     print()
     print("What do you wish to do?")
@@ -188,7 +186,7 @@ everything you need to defend yourself and kill the dragon?""")
         
 #Shop
 def fifteen():
-#    print("15: Shop")
+    print("15: Shop")
     print("""You find a nice, small shop that sells various items.  A shopkeeper is sitting
 outside.""")
     print()  
@@ -250,7 +248,7 @@ find some.""")
         
 #Forest            
 def fourteen():
-#    print("14: Forest")
+    print("14: Forest")
     print("You find yourself in a forest with nothing notable around you.")
     print()
     print("What do you wish to do?")
@@ -288,7 +286,7 @@ def fourteen():
     
 #Forest
 def thirteen():
-#    print("13: Forest")
+    print("13: Forest")
     print("You find yourself in a forest with nothing notable around you.")
     print()
     print("What do you wish to do?")
@@ -329,7 +327,7 @@ def thirteen():
         
 #Dragon Cave
 def twelve():
-#    print("Dragon Cave")
+    print("Dragon Cave")
 #    inventory.append("shield")
 #    inventory.append("sword")
     print("12: Dragon Cave")
@@ -339,43 +337,38 @@ and then breathes out huge flames of fire at you!""")
         
     if "shield" not in inventory:
         print("""
-                   ...
-                 ;::::;
-               ;::::; :;
-             ;:::::'   :;
-            ;:::::;     ;.
-           ,:::::'       ;           OOO\
-           ::::::;       ;          OOOOO\
-           ;:::::;       ;         OOOOOOOO
-          ,;::::::;     ;'         / OOOOOOO
-        ;:::::::::`. ,,,;.        /  / DOOOOOO
-      .';:::::::::::::::::;,     /  /     DOOOO
-     ,::::::;::::::;;;;::::;,   /  /        DOOO
-    ;`::::::`'::::::;;;::::: ,#/  /          DOOO
-    :`:::::::`;::::::;;::: ;::#  /            DOOO
-    ::`:::::::`;:::::::: ;::::# /              DOO
-    `:`:::::::`;:::::: ;::::::#/               DOO
-     :::`:::::::`;; ;:::::::::##                OO
-     ::::`:::::::`;::::::::;:::#                OO
-     `:::::`::::::::::::;'`:;::#                O
-      `:::::`::::::::;' /  / `:#
-       ::::::`:::::;'  /  /   `#
-
+                     uuuuuuu
+                 uu$$$$$$$$$$$uu
+              uu$$$$$$$$$$$$$$$$$uu
+             u$$$$$$$$$$$$$$$$$$$$$u
+            u$$$$$$$$$$$$$$$$$$$$$$$u
+           u$$$$$$$$$$$$$$$$$$$$$$$$$u
+           u$$$$$$$$$$$$$$$$$$$$$$$$$u
+           u$$$$$$"   "$$$"   "$$$$$$u
+           "$$$$"      u$u       $$$$"
+            $$$u       u$u       u$$$
+            $$$u      u$$$u      u$$$
+             "$$$$uu$$$   $$$uu$$$$"
+              "$$$$$$$"   "$$$$$$$"
+                u$$$$$$$u$$$$$$$u
+                 u$"$"$"$"$"$"$u
+      uuu        $$u$ $ $ $ $u$$       uuu
+     u$$$$        $$$$$u$u$u$$$       u$$$$
+      $$$$$uu      "$$$$$$$$$"     uu$$$$$$
+    u$$$$$$$$$$$uu        uuuu$$$$$$$$$$
+    $$$$'''$$$$$$$$$$uuu   uu$$$$$$$$$'''$$$'
+     '''      ''$$$$$$$$$$$uu ''$'''    
+               uuu''''$$$$$$$$$$uuu
+      u$$$uuu$$$$$$$$$uu ""$$$$$$$$$$$uuu$$$
+      $$$$$$$$$$''''           ''$$$$$$$$$$$'
+       '$$$$$'                      ''$$$$''
+         $$$'                         $$$$'                        
 """)
         print("You're dead.  Good job.")
         print()
         print("Play again? Yes or no?")
         print()
-        action = input(">>> ")
-        
-        if action.lower() == "yes":
-            print()
-            seventeen()
-            
-        elif action.lower() == "no":
-            print()
-            print("Goodbye.")
-            print()
+        play_again()
             
     elif "shield" in inventory and "sword" not in inventory:
         shield_only()
@@ -410,28 +403,32 @@ def shield_only():
         print("""While rethinking the wisdom of attacking Hrothgar with no weapon, he
 eats you.""")
         print("""
-                   ...
-                 ;::::;
-               ;::::; :;
-             ;:::::'   :;
-            ;:::::;     ;.
-           ,:::::'       ;           OOO\
-           ::::::;       ;          OOOOO\
-           ;:::::;       ;         OOOOOOOO
-          ,;::::::;     ;'         / OOOOOOO
-        ;:::::::::`. ,,,;.        /  / DOOOOOO
-      .';:::::::::::::::::;,     /  /     DOOOO
-     ,::::::;::::::;;;;::::;,   /  /        DOOO
-    ;`::::::`'::::::;;;::::: ,#/  /          DOOO
-    :`:::::::`;::::::;;::: ;::#  /            DOOO
-    ::`:::::::`;:::::::: ;::::# /              DOO
-    `:`:::::::`;:::::: ;::::::#/               DOO
-     :::`:::::::`;; ;:::::::::##                OO
-     ::::`:::::::`;::::::::;:::#                OO
-     `:::::`::::::::::::;'`:;::#                O
-      `:::::`::::::::;' /  / `:#
-       ::::::`:::::;'  /  /   `#
-
+                      uuuuuuu
+                 uu$$$$$$$$$$$uu
+              uu$$$$$$$$$$$$$$$$$uu
+             u$$$$$$$$$$$$$$$$$$$$$u
+            u$$$$$$$$$$$$$$$$$$$$$$$u
+           u$$$$$$$$$$$$$$$$$$$$$$$$$u
+           u$$$$$$$$$$$$$$$$$$$$$$$$$u
+           u$$$$$$"   "$$$"   "$$$$$$u
+           "$$$$"      u$u       $$$$"
+            $$$u       u$u       u$$$
+            $$$u      u$$$u      u$$$
+             "$$$$uu$$$   $$$uu$$$$"
+              "$$$$$$$"   "$$$$$$$"
+                u$$$$$$$u$$$$$$$u
+                 u$"$"$"$"$"$"$u
+      uuu        $$u$ $ $ $ $u$$       uuu
+     u$$$$        $$$$$u$u$u$$$       u$$$$
+      $$$$$uu      "$$$$$$$$$"     uu$$$$$$
+    u$$$$$$$$$$$uu        uuuu$$$$$$$$$$
+    $$$$'''$$$$$$$$$$uuu   uu$$$$$$$$$'''$$$'
+     '''      ''$$$$$$$$$$$uu ''$'''    
+               uuu''''$$$$$$$$$$uuu
+      u$$$uuu$$$$$$$$$uu ""$$$$$$$$$$$uuu$$$
+      $$$$$$$$$$''''           ''$$$$$$$$$$$'
+       '$$$$$'                      ''$$$$''
+         $$$'                         $$$$' 
 """)
         print("You're dead.  Good job.")
         print()
@@ -531,7 +528,7 @@ def play_again():
 
 #Forest
 def eleven():
-#    print("11: Forest")
+    print("11: Forest")
     print("You find yourself in a forest with nothing notable around you.")
     print()
     print("What do you wish to do?")
@@ -577,7 +574,7 @@ everything you need to defend yourself and kill the dragon?""")
         
 #Forest
 def ten():
-#    print("10: Forest")
+    print("10: Forest")
     print("You find yourself in a forest with nothing notable around you.")
     print()
     print("What do you wish to do?")
@@ -615,7 +612,7 @@ def ten():
         
 #Burning Castle
 def nine():
-#    print("9: Burning Castle")
+    print("9: Burning Castle")
     print("You see the castle burning and in ruins.  There's an elderly man there.")
     print()
     print("What do you wish to do?")
@@ -662,7 +659,7 @@ def nine():
 
 ## Quest Questions
 def questQuestions():
-#    print("Quest Questions")
+    print("Quest Questions")
     print("Answer me these questions three!")
     print()
     print("What is your name?")
@@ -679,7 +676,7 @@ def questQuestions():
             print()
             answer3 = input(">>> ")
             print()
-            if answer3 == "seven":
+            if answer3.lower() == "seven":
                 print("""The elderly man says, 'You are the chosen one!  Take this sword
 and slay the dragon!""")
                 print()
@@ -700,7 +697,7 @@ and slay the dragon!""")
 
 #Forest
 def eight():
-#    print("8: Forest")
+    print("8: Forest")
     print("You find yourself in a forest with nothing notable around you.")
     print()
     print("What do you wish to do?")
@@ -747,7 +744,7 @@ everything you need to defend yourself and kill the dragon?""")
         
 #Hollow Tree
 def seven():
-#    print("7: Hollow Tree")
+    print("7: Hollow Tree")
     print("You stand in a meadow with a large tree in the middle.  There is a hole in the tree.")
     print()
     print("What do you wish to do?")
@@ -797,7 +794,7 @@ def seven():
         
 #Forest
 def six():
-#    print("6: Forest")
+    print("6: Forest")
     print("You find yourself in a forest with nothing notable around you.")
     print()
     print("What do you wish to do?")
@@ -835,7 +832,7 @@ def six():
         
 #Village
 def five():
-#    print("5: Village")
+    print("5: Village")
     print("""You enter village.  You see a little, old lady that keeps looking at you like
 she wants to tell you something.""")
     print()
@@ -852,7 +849,7 @@ she wants to tell you something.""")
 
     elif action.lower() == "talk to little, old lady":
         print()
-        print("Did you know that there are eight species of pangolin?")
+        print("Did you know that there are seven species of pangolin?")
         print()
         five()
 
@@ -888,7 +885,7 @@ she wants to tell you something.""")
         
 #Mine
 def four():
-#    print("4: Mine")
+    print("4: Mine")
     print("You come upon an old abandoned mine.")
     print()
     print("What do you wish to do?")
@@ -951,7 +948,7 @@ a pickaxe.""")
         
 #Forest
 def three():
-#    print("3: Forest")
+    print("3: Forest")
     print("You find yourself in a forest with nothing notable around you.")
     print()
     print("What do you wish to do?")
@@ -992,7 +989,7 @@ def three():
         
 #Forest
 def two():
-#    print("2: Forest")
+    print("2: Forest")
     print("You find yourself in a forest with nothing notable around you.")
     print()
     print()
@@ -1033,7 +1030,7 @@ def two():
         
 #Farm Field
 def one():
-#    print("1: Farm Field")
+    print("1: Farm Field")
     print("You find a field filled with wheat and a farmer leaning on the fence.")
     print()
     print("What do you wish to do?")
